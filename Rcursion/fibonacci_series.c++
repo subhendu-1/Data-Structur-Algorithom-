@@ -39,11 +39,17 @@ else{
     }
     if(F[n-1] == -1){
         F[n-1] = fib1(n-1);
+        F[n] = F[n-2] + F[n-1];
     }
-    return fib1(n-2) + fib1(n-1);
+    return F[n-2] + F[n-1];
+    // return fib1(n-2) + fib1(n-1);
 }
 }
 int main(){
+    int i;
+    for(i = 0; i <=10; i++){
+        F[i] = -1;
+    }
     int x;
     cout << "Enter the index you went to fibonacci number: ";
     cin >> x;
