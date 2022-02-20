@@ -25,6 +25,6 @@ int main(){
     for(int i = 0; i < 5; i++){
         cout << q[i] << endl;
     }
-    cout << sizeof(q)/sizeof(q[0]);
+    cout << sizeof(q);
     return 0;
 }
